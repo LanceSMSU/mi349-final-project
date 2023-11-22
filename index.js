@@ -33,6 +33,10 @@ function randomizeChamp(sort){
     }
     let currentChamp = champNames[Math.floor(Math.random() * champNames.length)];
     localStorage.setItem('currentChamp',currentChamp);
+    // Remove the special characters for the filenames
+    while(currentChamp.includes("'")){
+        currentChamp = currentChamp.replace("'",'');
+    }
     localStorage.setItem('currentChampImage',currentChamp + ".png");
     window.location.href = "result-screen.html";
 }
