@@ -1,5 +1,11 @@
+/**
+ * Get a randomized champ based off of sort settings and save the champ name and image filename to local storage
+ * @param sort What type of champ to randomize from 
+ */
 function randomizeChamp(sort){
     let champnames;
+
+    // Based on the current sorting setting, define the list of champs to randomize from
     if(sort === "any"){
         champNames = ["Aatrox", "Ahri", "Akali", "Akshan", "Alistar", "Amumu", "Anivia", "Annie",
      "Aphelios", "Ashe", "Aurelion Sol", "Azir", "Bard", "Bel'Veth", "Blitzcrank", "Brand", "Braum",
@@ -31,23 +37,40 @@ function randomizeChamp(sort){
     } else if(sort === "support"){
 
     }
+
+    // Get the random champ out of the filtered pool
     let currentChamp = champNames[Math.floor(Math.random() * champNames.length)];
+
+    // Store the randomized champ in local storage
     localStorage.setItem('currentChamp',currentChamp);
+
     // Remove the special characters for the filenames
     while(currentChamp.includes("'")){
         currentChamp = currentChamp.replace("'",'');
     }
+
+    // Set the filename of the champ to the current random champ
     localStorage.setItem('currentChampImage',currentChamp + ".png");
-    window.location.href = "result-screen.html";
 }
 
+/**
+ * Sets the random champ name text in the results to the current randomized champ in storage
+ */
 function SetRandomText(){
+    // Get the random champ text element
     let champText = document.getElementById("randomChampText");
+
+    // Set the text of the label
     champText.innerHTML = localStorage.getItem('currentChamp');
 }
 
+/**
+ * Sets the random champ image in the results to the current randomized champ image filename in storage
+ */
 function SetRandomImage(){
+    // Get the element that holds the image of the random champ
     let champImage = document.getElementById("masthead");
+
+    // Set the element's image to the random champ filepath in local storage
     champImage.style.background = "no-repeat bottom / cover url('images/"+localStorage.getItem('currentChampImage')+"')";
-    //champImage.style.background = "no-repeat bottom / cover url('images/lux.png')";
 }

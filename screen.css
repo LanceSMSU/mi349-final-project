@@ -1,4 +1,8 @@
 /* Add screen styles below */
+body{
+    background-color: gray;
+}
+
 #randomChampText{
     font-size: 3em;
     color: red !important;
