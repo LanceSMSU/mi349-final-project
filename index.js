@@ -1,5 +1,4 @@
 function randomizeChamp(sort){
-    let champText = document.getElementById("randomChampText");
     let champnames;
     if(sort === "any"){
         champNames = ["Aatrox", "Ahri", "Akali", "Akshan", "Alistar", "Amumu", "Anivia", "Annie",
@@ -32,7 +31,19 @@ function randomizeChamp(sort){
     } else if(sort === "support"){
 
     }
-    let result = champNames[Math.floor(Math.random() * champNames.length)];
-    champText.innerHTML = result;
-    return result;
+    let currentChamp = champNames[Math.floor(Math.random() * champNames.length)];
+    localStorage.setItem('currentChamp',currentChamp);
+    localStorage.setItem('currentChampImage',currentChamp + ".png");
+    window.location.href = "result-screen.html";
+}
+
+function SetRandomText(){
+    let champText = document.getElementById("randomChampText");
+    champText.innerHTML = localStorage.getItem('currentChamp');
+}
+
+function SetRandomImage(){
+    let champImage = document.getElementById("masthead");
+    champImage.style.background = "no-repeat bottom / cover url('images/"+localStorage.getItem('currentChampImage')+"')";
+    //champImage.style.background = "no-repeat bottom / cover url('images/lux.png')";
 }
