@@ -88,6 +88,7 @@ function randomizeChamp(sort){
     // Set the filename of the champ to the current random champ
     localStorage.setItem('currentChampImage',currentChamp + ".png");
 
+    // Switch window to results screen
     window.location.href = "result-screen.html";
 }
 
