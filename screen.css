@@ -3,6 +3,10 @@ body{
     background-color: gray;
 }
 
+button:hover{
+    cursor: pointer;
+}
+
 #randomChampText{
     font-size: 3em;
     color: red !important;
