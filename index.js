@@ -1,13 +1,23 @@
+// The current sorting of the button
+let currentSort = "All";
+
+/**
+ * Sets the current sort value to be 
+ * @param sort what to set the sort value to
+ */
+function SetCurrentSort(sort){
+    currentSort = sort;
+    document.getElementById("SortText").innerHTML=currentSort;
+}
+
 /**
  * Get a randomized champ based off of sort settings and save the champ name and image filename to local storage
- * @param sort What type of champ to randomize from 
  */
-function randomizeChamp(sort){
+function randomizeChamp(){
     let champnames;
-
     // Based on the current sorting setting, define the list of champs to randomize from
-    switch(sort){
-        case 'any':
+    switch(currentSort){
+        case 'All':
             champNames = ["Aatrox", "Ahri", "Akali", "Akshan", "Alistar", "Amumu", "Anivia", "Annie",
                 "Aphelios", "Ashe", "Aurelion Sol", "Azir", "Bard", "Bel'Veth", "Blitzcrank", "Brand", "Braum",
                 "Briar", "Caitlyn", "Camille", "Cassiopeia", "Cho'Gath", "Corki", "Darius", "Diana", "Dr. Mundo",
@@ -28,7 +38,7 @@ function randomizeChamp(sort){
                 "Wukong", "Xayah", "Xerath", "Xin Zhao", "Yasuo", "Yone", "Yorick", "Yuumi", "Zac",
                 "Zed", "Zeri", "Ziggs", "Zilean", "Zoe", "Zyra"];
             break;
-        case 'mid':
+        case 'Middle':
                 champNames = ["Ahri", "Akali", "Akshan", "Anivia", "Annie",
                 "Aurelion Sol", "Azir", "Cassiopeia", "Corki", "Ekko", "Fizz", "Galio",
                 "Irelia", "Jayce", "Kassadin", "Katarina", "LeBlanc", "Lissandra", "Lux", "Malzahar", "Naafiri", "Neeko",
@@ -37,7 +47,7 @@ function randomizeChamp(sort){
                 "Veigar", "Vex", "Viktor", "Vladimir", "Xerath", "Yasuo", "Yone",
                 "Zed", "Ziggs", "Zoe"];
             break;
-        case 'top':
+        case 'Top':
             champNames = ["Aatrox", "Akali", "Camille", "Cho'Gath", "Darius", "Dr. Mundo", "Fiora",
                 "Gangplank", "Garen", "Gnar", "Gwen", "Illaoi",
                 "Irelia", "Jax", "Jayce", "Kayle", "Kennen",
@@ -46,7 +56,7 @@ function randomizeChamp(sort){
                 "Riven", "Rumble", "Sett", "Shen", "Singed", "Sion", "Tahm Kench", "Teemo",
                 "Trundle", "Tryndamere", "Urgot", "Volibear", "Yasuo", "Yone", "Yorick"];
             break;
-        case 'jungle':
+        case 'Jungle':
             champNames = ["Amumu", "Bel'Veth",
                 "Briar", "Diana", "Ekko", "Elise", "Evelynn", "Fiddlesticks", "Gragas", "Graves", "Hecarim", "Ivern", "Jarvan IV", "Karthus", "Kayn", "Kha'Zix", "Kindred",
                 "Lee Sin", "Lillia", "Maokai", "Master Yi", "Nidalee",
@@ -57,14 +67,14 @@ function randomizeChamp(sort){
                 "Trundle", "Udyr", "Vi", "Viego", "Warwick",
                 "Wukong", "Xin Zhao", "Zac"];
             break;
-        case 'bottom':
+        case 'Bottom':
             champNames = ["Aphelios", "Ashe", "Caitlyn",
                 "Draven", "Ezreal", "Jhin", "Jinx", "Kai'Sa", "Kalista",
                 "Kog'Maw", "Lucian", "Miss Fortune",
                 "Nilah", "Samira", "Sivir", "Tristana", "Twitch", "Varus", "Vayne",
                 "Xayah", "Yasuo", "Zeri", "Ziggs"];
             break;
-        case 'support':
+        case 'Support':
             champNames = ["Alistar", "Ashe", "Bard", "Blitzcrank", "Brand", "Braum", "Heimerdinger", "Janna",
                 "Karma", "Leona",
                 "Lulu", "Lux", "Milio", "Morgana", "Nami", "Nautilus", "Neeko", "Pantheon",

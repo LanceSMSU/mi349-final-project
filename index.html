@@ -18,32 +18,32 @@
       <div id="sorting">
         <div class="picture">
           <img alt="Top Lane" src="images/top.png" width="150" height="150">
-          <button class="button" onclick="">Top</button>
+          <button class="button" onclick="SetCurrentSort('Top')">Top</button>
         </div>
         <div class="picture">
           <img alt="Mid Lane" src="images/middle.png" width="150" height="150">
-          <button class="button" onclick="">Middle</button>
+          <button class="button" onclick="SetCurrentSort('Middle')">Middle</button>
         </div>
         <div class="picture">
           <img alt="Bot Lane" src="images/bot.png" width="150" height="150">
-          <button class="button" onclick="">Bottom</button>
+          <button class="button" onclick="SetCurrentSort('Bottom')">Bottom</button>
         </div>
         <div class="picture">
           <img alt="Support" src="images/support.webp" width="150" height="150">
-          <button class="button" onclick="">Support</button>
+          <button class="button" onclick="SetCurrentSort('Support')">Support</button>
         </div>
         <div class="picture">
           <img alt="Jungle" src="images/jungle.png" width="150" height="150">
-          <button class="button" onclick="">Jungle</button>
+          <button class="button" onclick="SetCurrentSort('Jungle')">Jungle</button>
         </div>
         <div class="picture">
           <img alt="All" src="images/fill.png" width="150" height="150">
-          <button class="button" onclick="">All</button>
+          <button class="button" onclick="SetCurrentSort('All')">All</button>
         </div>
       </div>
       <div class="bottom">
         <h1>You are sorting by:</h1>
-      <h2>Test</h2>
+        <h2 id="SortText">All</h2>
       </div> 
     </section>
     <section id="footer">
