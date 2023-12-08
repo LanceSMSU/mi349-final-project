@@ -8,7 +8,48 @@
     <link rel="stylesheet" href="screen.css">
   </head>
   <body>
-    <button class="center button" onclick="randomizeChamp('any')">Randomize!</button>
+    <section id="title">
+      <div id="banner_contents">
+        <h1>League of Legends Randomizer<h1>
+        <h2>Select a filter below and click randomize to generate a champion.</h2>
+      </div>
+    </section>
+    <section id="sortbox">
+      <div id="sorting">
+        <div class="picture">
+          <img alt="Top Lane" src="images/top.png" width="150" height="150">
+          <button class="button" onclick="">Top</button>
+        </div>
+        <div class="picture">
+          <img alt="Mid Lane" src="images/middle.png" width="150" height="150">
+          <button class="button" onclick="">Middle</button>
+        </div>
+        <div class="picture">
+          <img alt="Bot Lane" src="images/bot.png" width="150" height="150">
+          <button class="button" onclick="">Bottom</button>
+        </div>
+        <div class="picture">
+          <img alt="Support" src="images/support.webp" width="150" height="150">
+          <button class="button" onclick="">Support</button>
+        </div>
+        <div class="picture">
+          <img alt="Jungle" src="images/jungle.png" width="150" height="150">
+          <button class="button" onclick="">Jungle</button>
+        </div>
+        <div class="picture">
+          <img alt="All" src="images/fill.png" width="150" height="150">
+          <button class="button" onclick="">All</button>
+        </div>
+      </div>
+      <div class="bottom">
+        <h1>You are sorting by:</h1>
+      <h2>Test</h2>
+      </div> 
+    </section>
+    <section id="footer">
+      <h1>Ready? Click Randomize!</h1>
+      <button class="button" onclick="randomizeChamp('any')">Randomize!</button>
+    </section>
     <script src="index.js"></script>
   </body>
 </html>
