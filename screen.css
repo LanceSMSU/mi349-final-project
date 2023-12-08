@@ -78,24 +78,23 @@ h2{
     text-align: center;
     border-radius: 20px;
     border: 5px solid #000;
+    justify-content: center;
+    overflow:scroll;
 }
 
 #sortbox .bottom{
     position:absolute;
     margin-top: 250px;
-    margin-left: 30%;
 }
 
 #sorting{
     display:flex;
-    margin: auto;
-    margin-top: 10px;
     gap: 30px;
 }
 
 #sorting .picture{
-    width: 150px;
     height: 250px;
+    margin-top: 10px;
     border: 1px solid #000;
 }
 
@@ -114,6 +113,9 @@ h2{
     border-radius: 20px;
     margin-top: 10px;
     border: 5px solid #000;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
 #footer h1{
