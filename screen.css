@@ -156,14 +156,15 @@ button:hover{
 
     #results h1{
         display: flex;
+        font-size: 50px;
         height: 90px;
-        width: 150px;
+        width: 200px;
         margin: auto;
     }
 
     #results h2{
         display: flex;
-        height: 100px;
+        height: 130px;
         width: 150px;
         margin: auto;
     }
@@ -330,7 +331,7 @@ button:hover{
 
     #results h2{
         display: flex;
-        height: 100px;
+        height: 130px;
         width: 150px;
         margin: auto;
     }
