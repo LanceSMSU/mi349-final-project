@@ -150,9 +150,10 @@ button:hover{
     }
     
     #masthead {
+        display: flex;
         height: 250px;
         width: 250px;
-        margin-left: 280px
+        margin: auto;
     }
     
     .button {
@@ -276,15 +277,31 @@ button:hover{
     }
     
     #resultsfooter{
-        
+        margin-top: 50px;
+        margin-left: 40px;
+        margin-right: 40px;
+        height:250px;
+        background-color: gray;
+        border-radius: 20px;
+        border: 5px solid #000;
+    }
+
+    #resultsfooter .button{
+        margin-top: 80px;
     }
 
     #results h1{
-        margin-left: 280px
+        display: flex;
+        height: 100px;
+        width: 200px;
+        margin: auto;
     }
 
     #results h2{
-        margin-left: 280px
+        display: flex;
+        height: 100px;
+        width: 150px;
+        margin: auto;
     }
 
     img{
