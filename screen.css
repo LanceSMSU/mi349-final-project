@@ -45,11 +45,11 @@ button:hover{
     #banner_contents {
         display: block;
         margin:auto;
-        width: 600px;
+        width: 200px;
     }
     
     h1{
-        font-size: 35px;
+        font-size: 30px;
         font-family: Inter;
         color:black
     }
@@ -59,7 +59,7 @@ button:hover{
     }
     
     h2{
-        font-size: 17px;
+        font-size: 20px;
         font-family: Inter;
         color:white;
     }
@@ -93,15 +93,15 @@ button:hover{
     }
     
     #sorting .picture{
-        height: 150px;
+        height: 110px;
         margin-top: 70px;
         border: 1px solid #000;
     }
     
     #sorting .button{
-        width: 50px;
+        width: 40px;
         height: 30px;
-        font-size: 15px;
+        font-size: 12px;
         margin-top: 30px;
     }
     
@@ -138,8 +138,8 @@ button:hover{
     }
 
     img{
-        width:50px;
-        height:50px;
+        width:35px;
+        height:35px;
     }
 }
 
@@ -216,7 +216,6 @@ button:hover{
         border-radius: 20px;
         border: 5px solid #000;
         justify-content: center;
-        overflow:scroll;
     }
     
     #sortbox .bottom{
