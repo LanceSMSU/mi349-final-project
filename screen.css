@@ -10,7 +10,7 @@ button:hover{
 @media only screen and (max-width: 576px) {
     #randomChampText{
         font-size: 3em;
-        color: red !important;
+        color: red;
     }
     
     #masthead {
@@ -146,12 +146,13 @@ button:hover{
 @media only screen and (min-width: 576px) {
     #randomChampText{
         font-size: 3em;
-        color: red !important;
+        color: red;
     }
     
     #masthead {
-        height: 200px;
-        width: 200px;
+        height: 250px;
+        width: 250px;
+        margin-left: 280px
     }
     
     .button {
@@ -265,12 +266,25 @@ button:hover{
     }
     
     #results{
-        margin-left:42vw;
+        margin-top: 50px;
+        margin-left: 40px;
+        margin-right: 40px;
+        height:500px;
+        background-color: gray;
+        border-radius: 20px;
+        border: 5px solid #000;
     }
     
     #resultsfooter{
-        margin-left:3vw;
-        margin-top:250px;
+        
+    }
+
+    #results h1{
+        margin-left: 280px
+    }
+
+    #results h2{
+        margin-left: 280px
     }
 
     img{
