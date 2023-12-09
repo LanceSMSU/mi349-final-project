@@ -127,3 +127,12 @@ h2{
     font-weight: 400;
     line-height: normal;
 }
+
+#results{
+    margin-left:42vw;
+}
+
+#resultsfooter{
+    margin-left:3vw;
+    margin-top:250px;
+}
