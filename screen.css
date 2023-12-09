@@ -14,8 +14,10 @@ button:hover{
     }
     
     #masthead {
+        display: flex;
         height: 200px;
         width: 200px;
+        margin: auto;
     }
     
     .button {
@@ -129,12 +131,41 @@ button:hover{
     }
     
     #results{
-        margin-left:42vw;
+        margin-top: 50px;
+        margin-left: 40px;
+        margin-right: 40px;
+        height:500px;
+        background-color: gray;
+        border-radius: 20px;
+        border: 5px solid #000;
     }
     
     #resultsfooter{
-        margin-left:3vw;
-        margin-top:250px;
+        margin-top: 50px;
+        margin-left: 40px;
+        margin-right: 40px;
+        height:250px;
+        background-color: gray;
+        border-radius: 20px;
+        border: 5px solid #000;
+    }
+
+    #resultsfooter .button{
+        margin-top: 80px;
+    }
+
+    #results h1{
+        display: flex;
+        height: 90px;
+        width: 150px;
+        margin: auto;
+    }
+
+    #results h2{
+        display: flex;
+        height: 100px;
+        width: 150px;
+        margin: auto;
     }
 
     img{
