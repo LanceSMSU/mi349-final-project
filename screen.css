@@ -89,7 +89,7 @@ button:hover{
     
     #sorting{
         display:flex;
-        gap: 10px;
+        gap: 5px;
     }
     
     #sorting .picture{
