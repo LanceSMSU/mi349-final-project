@@ -229,7 +229,7 @@ button:hover{
     }
     
     #sorting .picture{
-        height: 250px;
+        height: 220px;
         margin-top: 10px;
         border: 1px solid #000;
     }
@@ -274,7 +274,7 @@ button:hover{
     }
 
     img{
-        width:150px;
-        height:150px;
+        width:100px;
+        height:100px;
     }
 }
