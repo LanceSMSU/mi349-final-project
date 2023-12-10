@@ -49,10 +49,17 @@ button:hover{
     #title img{
         position:absolute;
         display:flex;
-        padding-left: 300px;  
-        padding-top: 40px;
         width:90px;
         height:90px;
+        padding-top: 40px;
+    }
+
+    .dice{
+        padding-right: 300px;  
+    }
+
+    .logo{
+        padding-left: 300px;  
     }
     
     #banner_contents {
@@ -228,8 +235,17 @@ button:hover{
     #title img{
         position:absolute;
         display:flex;
-        padding-left: 900px;  
+        width:90px;
+        height:90px;
         padding-top: 40px;
+    }
+
+    .dice{
+        padding-right: 900px;  
+    }
+
+    .logo{
+        padding-left: 900px;  
     }
     
     #banner_contents {
