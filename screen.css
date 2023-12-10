@@ -149,6 +149,10 @@ button:hover{
         font-style: normal;
         line-height: normal;
     }
+
+    #footer .button{
+        margin-top: -25px;
+    }
     
     #results{
         margin-top: 50px;
@@ -172,10 +176,14 @@ button:hover{
     }
 
     #resultsfooter h1{
-        width:300px;
+        width:260px;
         font-size: 35px;
         margin-top: 50px;
         margin-left: 15px;
+    }
+
+    #resultsfooter .button{
+        margin-top: -20px;
     }
 
     #results h1{
