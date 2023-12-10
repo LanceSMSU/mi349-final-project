@@ -36,12 +36,23 @@ button:hover{
     
     #title{
         position: absolute;
+        display: flex;
         top: 0px;
         left: 0px; 
         background-color: rgb(176,139,16);
         width:100%;
         margin: 0 auto;
         text-align: center;
+        justify-content: center;
+    }
+
+    #title img{
+        position:absolute;
+        display:flex;
+        padding-left: 300px;  
+        padding-top: 40px;
+        width:60px;
+        height:60px;
     }
     
     #banner_contents {
@@ -204,12 +215,21 @@ button:hover{
     
     #title{
         position: absolute;
+        display: flex;
         top: 0px;
         left: 0px; 
         background-color: rgb(176,139,16);
         width:100%;
         margin: 0 auto;
         text-align: center;
+        justify-content: center;
+    }
+
+    #title img{
+        position:absolute;
+        display:flex;
+        padding-left: 900px;  
+        padding-top: 40px;
     }
     
     #banner_contents {
@@ -221,17 +241,19 @@ button:hover{
     h1{
         font-size: 50px;
         font-family: Inter;
-        color:black
+        color:black;
     }
     
     #title h1{
         text-decoration: underline;
+        margin-bottom: 0;
     }
     
     h2{
         font-size: 25px;
         font-family: Inter;
         color:white;
+        margin-bottom: 0;
     }
     
     #sortbox h2{
